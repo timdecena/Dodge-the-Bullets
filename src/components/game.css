@@ -1,0 +1,91 @@
+.game-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .background {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+  }
+  
+  .background-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .platform {
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 300px;
+  }
+  
+  .character-container {
+    position: absolute;
+    bottom: 25%;
+    left: 50%;
+    transform: translate(-50%, -25%);
+    transition: all 0.1s ease;
+  }
+  
+  .character {
+    width: 150px; /* Adjust size */
+    height: 150px;
+  }
+  
+  .health-bar {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 200px;
+    height: 20px;
+    border: 2px solid white;
+  }
+  
+  .health {
+    background-color: red;
+    height: 100%;
+  }
+
+  .game-over-screen {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+  }
+  
+  .game-over-screen h1 {
+    font-size: 3rem;
+  }
+  
+  .game-over-screen button {
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .game-over-screen button:hover {
+    background-color: #45a049;
+  }
+
+  .horizontal-bullet {
+    position: absolute;
+    /* Add any other styles you want here */
+  }
+  
